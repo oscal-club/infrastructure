@@ -1,3 +1,7 @@
+terraform {
+  backend "s3" {}
+}
+
 locals {
   ipv4_regex = "\\d{1,3}.\\d{1,3}.\\d{1,3}.\\d{1,3}\\/\\d{2}"
   ips        = lookup(jsondecode(module.github_meta_api_ips.response), "pages", [])
