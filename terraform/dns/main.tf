@@ -9,7 +9,7 @@ terraform {
 
 # It is expected you pass the credentials outside the module, or by use of the
 # GANDI_KEY and GANDI_STAGING_ID
-provider "gandi" {}
+# provider "gandi" {}
 
 data "gandi_domain" "zone" {
   name = var.zone
