@@ -25,12 +25,12 @@ locals {
 }
 
 module "github_meta_api_ips" {
-  source = "./http-api-json"
+  source = "./modules/http-api-json"
   url    = "https://api.github.com/meta"
 }
 
 module "dns_website_hosting" {
-  source = "./dns"
+  source = "./modules/dns"
   zone   = "oscal.club"
   records = [
     {
@@ -57,5 +57,5 @@ module "dns_website_hosting" {
 }
 
 module "aws_organization" {
-  source = "./aws/organizations/organization"
+  source = "./modules/aws/organizations/organization"
 }
