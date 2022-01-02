@@ -59,3 +59,18 @@ module "dns_website_hosting" {
 module "aws_organization" {
   source = "./modules/aws/organizations/organization"
 }
+
+module "okta_app_saml_aws" {
+  source = "./modules/okta/app_saml_preconfigured"
+  label              = "amazon"
+  preconfigured_app  = "amazon_aws_sso"
+  status             = "ACTIVE"
+  user_name_template = "$${source.email}"
+}
+
+module "okta_group_app_saml_aws_admins" {
+  source = "./modules/okta/group"
+  name = "saml-aws-oscal-club-admins"
+  description = "The Okta group with membership that provides AdministratorAccess privileges to oscal.club accounts via AWS SAML auth."
+  skip_users = false
+}

@@ -44,3 +44,25 @@ provider "registry.terraform.io/hashicorp/http" {
     "zh:fe373b2fb2cc94777a91ecd7ac5372e699748c455f44f6ea27e494de9e5e6f92",
   ]
 }
+
+provider "registry.terraform.io/okta/okta" {
+  version     = "3.20.2"
+  constraints = "~> 3.20"
+  hashes = [
+    "h1:JAkW77pA14w2EjWL74Hwde06KHneIf3ZDiuRtJ+Tgvk=",
+    "zh:0fcba282a4667a3bc4451ce55b166c83d113f4bd5e8bd1b4a85bb3adeaba9dee",
+    "zh:2aeb00736bd5cce185b2b690fa6bc215aeb635374b06d0cd9e4b9dd2a7285629",
+    "zh:2db74e7c04913fd410582067feed9b7837ec3a1dd1167192814d125cb165b384",
+    "zh:2f2c2b1a3efea9f7e743ac4290a8b735250828aaf12119c3afbac66d3b59603f",
+    "zh:46dc736b2cfac213ab699846501f58675beb5543f7259d29373f0a0e3fc0ee50",
+    "zh:4c2d836117979e72c672923594b24232d15266395d12df1fa2973bc21cdfaf59",
+    "zh:7384cbc811fdc229f026d8b6355dade508f642a82c1dd9a7e5545a98adb5a0b8",
+    "zh:917d8b89d9e7fcae4714f324060edf97615c9b2d68ebb749f697c2347f4939b5",
+    "zh:92653bb16a0ff0db98cfd9a88090e037b7f0e36b28fd9186d129c10292a52665",
+    "zh:945e3c3bda9043335c946ef2f55aa066b302beb19eb7ad6754a12d91b0a1543b",
+    "zh:c273c4daeb3d1d22a5a57d1a2a19b19560cf16a1f392f7779cb078d6b7642956",
+    "zh:ca30ed8fae37534a72f30b29dccfb49c284eb61a25c1344a8c24621e82faf881",
+    "zh:dd62ae2aef43f258e137523da3afe30eb4ffa3b5fa57b78ff5981bfa8d734b7e",
+    "zh:ee99c985b5d4c3ca570d407926b0dbf328b0cedadd5553cbdb8dd6e794e4217d",
+  ]
+}
